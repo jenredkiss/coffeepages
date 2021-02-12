@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<hmtl>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+        <meta charset="utf-8">
+        <title>Coffee</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <img  src="images/menu.png" class="menu" onclick="toggleMenu()">
+            <div class="nav">
+                <ul id="menuList">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Coffee</a></li>
+                    <li><a href="#">Contact Us</a></li>             
+                </ul>
+            </div>
+            
+            <div class="logo">
+                <img src="images/coffee_cup.PNG">
+            </div>
+            <div class="header">
+                <h1>Everything is a good start with a coffee !</h1>
+            </div> 
+            <div class="tagline">
+                <p>A language In Itself</p>
+            </div>  
+            <button class="btn">
+                More Tastes
+            </button>        
+        </div>
+        <script>
+            var menuList = document.getElementById("menuList");
+            menuList.style.maxHeight = "0px";
+            function toggleMenu(){
+                if(menuList.style.maxHeight == "0px")
+                {
+                    menuList.style.maxHeight = "150px"
+                }
+                else
+                {
+                   menuList.style.maxHeight = "0px"
+                }
+    
+            }
+        </script>
+    </body>    
+</hmtl>
